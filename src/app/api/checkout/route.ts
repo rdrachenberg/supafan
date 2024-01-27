@@ -1,11 +1,10 @@
-/* eslint-disable @typescript-eslint/non-nullable-type-assertion-style */
 import { createClient } from "@/utils/supabase/server";
 import { cookies, headers } from "next/headers";
 import { NextResponse } from "next/server";
 import Stripe from 'stripe';
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-export const dynamic = 'force-dynamic';
+
 
 export async function GET(req: Request) {
     try {

@@ -1,6 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @typescript-eslint/consistent-type-imports */
-/* eslint-disable @next/next/no-img-element */
 import { RouterOutputs } from "@/trpc/shared";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader } from "@/components/ui/card";
 import { HeartIcon, ImageIcon, MessageCircleIcon, TextIcon, VideoIcon } from "lucide-react";
@@ -13,7 +10,7 @@ export default function CreatorPost({ post }: Props) {
     return (
         <Card>
             {post.image_url && (
-                <img className='w-full rounded-md bg-slate-300' src={post.image_url} />
+                <img className='w-full rounded-md bg-slate-300' src={post.image_url} alt={post.profile?.name}/>
             )}
             {post.video_url && (
                 <video className='w-full rounded-md bg-slate-300' controls src={post.video_url} />

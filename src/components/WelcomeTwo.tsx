@@ -19,7 +19,7 @@ export default function WelcomeTwo() {
     return (
         <Card className='w-[400px]'>
             <CardHeader>
-                <CardTitle>Let's Name Your SupaFan Account</CardTitle>
+                <CardTitle>Let&apos;s Name Your SupaFan Account</CardTitle>
                 <CardDescription>There is already more than 250k createors on SupaFan and there is about to be one more! </CardDescription>
             </CardHeader>
             <CardContent>
@@ -46,7 +46,7 @@ export default function WelcomeTwo() {
                 <Button 
                     variant='ghost' 
                     className='w-full'
-                    onClick={router.back}
+                    onClick={() => router.back()}
                     >Back
                 </Button>
             </CardFooter>

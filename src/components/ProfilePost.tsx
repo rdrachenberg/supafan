@@ -30,7 +30,7 @@ export default function ProfilePost({post, isSubscribed}: Props) {
     return (
         <Card>
             {post.image_url && isSubscribed &&  (
-                <img className='w-full rounded-md bg-slate-300' src={post.image_url} />
+                <img className='w-full rounded-md bg-slate-300' src={post.image_url} alt=''/>
             )}
             {post.video_url && isSubscribed && (
                 <video className='w-full rounded-md bg-slate-300' controls src={post.video_url} />

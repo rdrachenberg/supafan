@@ -103,7 +103,7 @@ export default function CreatorProfile ({ profile }: Props) {
                             </p>
                             {profile.cover_url ? (
                                 // eslint-disable-next-line @next/next/no-img-element
-                                <img src={profile.cover_url} className='object-fit h-[200px] w-auto rounded-lg' />
+                                <img src={profile.cover_url} className='object-fit h-[200px] w-auto rounded-lg' alt='cover'/>
                             ) : (
                                 <div className='h-[200px] w-full rounded-lg bg-gray-100' />
                             )}

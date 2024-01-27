@@ -87,7 +87,7 @@ export const publicProcedure = t.procedure;
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 const enforceUserIsAuthed = t.middleware(({ ctx, next }) => {
   // eslint-disable-next-line @typescript-eslint/prefer-optional-chain, @typescript-eslint/no-unsafe-member-access
-  if(!ctx.session || !ctx.session.user) {
+  if(!ctx.session?.user) {
     throw new TRPCError({code: "UNAUTHORIZED"});
   }
   return next({

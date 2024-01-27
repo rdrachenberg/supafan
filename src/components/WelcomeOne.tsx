@@ -32,13 +32,13 @@ export default function WelcomeOne() {
                         <span className='w-6 text-gray-400'>
                             <InboxIcon />
                         </span>
-                        <span>Invite fans and connect with them for free. It's super simple to start. Signup now!</span>
+                        <span>Invite fans and connect with them for free. It&apos;s super simple to start. Signup now!</span>
                     </li>
                     <li className='flex items-center space-x-4 p-2'>
                         <span className='w-6 text-gray-400'>
                             <DollarSignIcon />
                         </span>
-                        <span>When your're ready to earn money, it's easy to offer paid memberships or sell digital products </span>
+                        <span>When your&apos;re ready to earn money, it&apos;s easy to offer paid memberships or sell digital products </span>
                     </li>
                 </ul>
             </CardContent>
