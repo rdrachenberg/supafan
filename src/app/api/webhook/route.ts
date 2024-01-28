@@ -15,6 +15,7 @@ export async function POST(req: Request) {
     const supabase = createClient(cookieStore);
 
     let event: Stripe.Event;
+    console.log('we got here');
 
     try {
         event = stripe.webhooks.constructEvent(
@@ -22,7 +23,7 @@ export async function POST(req: Request) {
             signature, 
             process.env.STRIPE_WEBHOOK_SECRET!,
         );
-
+        console.log('we got here 2');
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
         
