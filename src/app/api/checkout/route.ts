@@ -40,8 +40,8 @@ export async function GET(req: Request) {
 
             return NextResponse.json({ url: billingPortal.url });
         }
-        // console.log('profile.id: ' + profile.id);
-        // console.log('creatorProfileId: ' + creatorProfileId);
+        console.log('profile.id: ' + profile.id);
+        console.log('creatorProfileId: ' + creatorProfileId);
 
         const checkoutSession = await stripe.checkout.sessions.create({
             payment_method_types: ["card"],
