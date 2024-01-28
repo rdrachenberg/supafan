@@ -52,7 +52,7 @@ export async function POST(req: Request) {
             active: true,
         });
     } else if(event.type === 'customer.subscription.deleted') {
-        const subscription = event.data.object;
+        const subscription = event.data.object as Stripe.Subscription;
 
         await supabase
             .from('subscription')
