@@ -20,7 +20,8 @@ const config = {
     "@typescript-eslint/no-unsafe-member-access": "off",
     "@typescript-esling/no-explicit-any": "off",
     "@typescript-eslint/non-nullable-type-assertion-style": "off",
-    "@next/next/no-img-element": "off"
+    "@next/next/no-img-element": "off",
+    "@typescript-eslint/no-redundant-type-constituents": "off",
     // These opinionated rules are enabled in stylistic-type-checked above.
     // Feel free to reconfigure them to your own preference.
   },
