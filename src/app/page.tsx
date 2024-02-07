@@ -7,7 +7,9 @@ import { api } from '@/trpc/server';
 import { redirect } from "next/navigation"
 export default async function Home() {
   const {profile, subscriptions} = await api.profile.getFanProflie.query();
-
+  
+  console.log(profile)
+  
   if(!profile) redirect('/signup');
   if(!profile?.type) redirect('/welcome');
   if(profile?.type === 'creator') redirect('/creator/profile');
